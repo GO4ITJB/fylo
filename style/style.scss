@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 // Headings, Call-to-actions, Header Navigation
@@ -16,9 +17,15 @@ body{
 // HEADER
 
 .header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: 'Raleway', sans-serif;
     padding: 1.5em 1.2em;
 
@@ -161,7 +168,8 @@ body{
         margin: 2em auto 0;
         padding: 1.5em;
         text-align: left;
-        box-shadow: 0 0 20px -10px grey;
+        -webkit-box-shadow: 0 0 20px -10px grey;
+                box-shadow: 0 0 20px -10px grey;
 
         >p{
             padding-top: 1em;
@@ -170,8 +178,12 @@ body{
     }
 
     &__testimonial-author{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding-top: 1.5em;
 
         img{
@@ -280,9 +292,16 @@ body{
     }
 
     .hero{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 0 2em;
 
         &__copy {
@@ -295,8 +314,12 @@ body{
     }
 
     .form-desktop-hero{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         font-size: .8em;
 
         input{
@@ -313,12 +336,22 @@ body{
     }
 
     .productive{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row-reverse;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
 
         &__text-container{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             padding: 0 2em;
         }
 
@@ -330,6 +363,8 @@ body{
 
     .access{
         padding: 0 3em;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         &__txt{
@@ -341,9 +376,16 @@ body{
         }
 
         .form-desktop-access{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             width: 80%;
 
             input{
@@ -362,8 +404,12 @@ body{
         font-size: 1em;
     
         &__links{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             width: 90%;
         }
 
@@ -373,6 +419,8 @@ body{
 
         &__social{
             margin-top: 2.2em;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
             display: inline-flex;
             
 
