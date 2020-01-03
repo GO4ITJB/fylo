@@ -35,7 +35,7 @@ body{
                 text-decoration: none;
                 padding: 0 .3em;
                 color: #000;
-                font-size: .9rem;
+                font-size: .9em;
             }
         }
     }
@@ -60,13 +60,13 @@ body{
 
         h1{
             font-family: 'Raleway', sans-serif;
-            font-size: 1.7rem;
+            font-size: 1.7em;
             line-height: 1.5em;
+            padding-bottom: 1.2em;
         }
 
         p{
-            padding: 1.2em 0;
-            font-size: 1rem;
+            font-size: 1em;
             line-height: 1.5em;
         }
     } 
@@ -76,6 +76,7 @@ body{
 // EMAIL form
 .form{            
     font-family: 'Raleway', sans-serif;
+    padding: 1.2em 0;
 
     input{
         width: 90%;
@@ -84,17 +85,18 @@ body{
         border: 1px solid #000;
         margin-bottom: 1em;
         color: hsl(0, 0%, 75%);
-        font-size: .8rem;
+        font-size: .8em;
     }
 
     button{
         width: 90%;
         padding: .8em 1em;
-        font-size: 1rem;
+        font-size: 1em;
         border-radius: 3px;
         border: none;
         color: #fff;
         background: hsl(224, 93%, 58%);
+        cursor: pointer;
     }
 
     button:hover{
@@ -108,6 +110,7 @@ body{
     background-size: 450% 100%;
     background-position-x: center;
     margin-top: 6em;
+    padding-top: 5em;
     padding-bottom: 4em;
 
     &__img{
@@ -116,18 +119,18 @@ body{
     }
 
     &__copy{
-        padding: 0 1em;
+        padding: 5em 1em;
 
         h4{
-            font-size: 1.3rem;
+            font-size: 1.3em;
             font-family: 'Raleway', sans-serif;
             padding-bottom: 1em;
         }
 
         p{
             text-align: left;
-            padding: 1.2em .2em;
-            font-size: 1.1rem;
+            padding: 1.2em 0;
+            font-size: 1.1em;
         }
 
         p:nth-child(4){
@@ -152,11 +155,11 @@ body{
     }
 
     &__testimonial{
-        background-color: hsl(240, 75%, 98%);
+        background-color:#fff;
         width: 85%;
         height: auto;
         margin: 2em auto 0;
-        padding: 1.5rem;
+        padding: 1.5em;
         text-align: left;
         box-shadow: 0 0 20px -10px grey;
 
@@ -182,12 +185,12 @@ body{
 
         h4{
             font-family: 'Raleway', sans-serif;
-            font-size: .9rem;
+            font-size: .9em;
             letter-spacing: 2px;
         }
 
         p{
-            font-size: .7rem;
+            font-size: .7em;
         }
     }
 }
@@ -201,13 +204,13 @@ body{
 
     h4{
         font-family: 'Raleway', sans-serif;
-        font-size: 1.4rem;
-        padding: 1em;
+        font-size: 1.4em;
+        padding: 1em 0;
     }
 
     p{
-        font-size: 1rem;
-        padding-bottom: 2em;
+        font-size: 1em;
+
     }
 }
 
@@ -216,7 +219,7 @@ body{
 .footer{
     background-color: hsl(243, 87%, 12%);
     color: #fff;
-    padding: 3em 2em;
+    padding: 3em 2em 1em;
 
     &__links ul{
         list-style: none;
@@ -224,12 +227,17 @@ body{
 
         li{
             line-height: 2.5em;
-            font-size: 1.1rem;
+            font-size: 1.1em;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
         }
     }
 
     &__contact{
-        font-size: 1rem;
+        font-size: 1em;
 
         img{
             padding-right: 1em;
@@ -247,3 +255,133 @@ body{
         color: #fff;
     }
 }
+
+@media (min-width: 1199px){
+
+    body{
+        font-size: 20px;
+    }
+
+    .container{
+        text-align: left;
+    }
+
+    .header{
+        padding: 3em;
+
+        &__img{
+            width: 10%;
+        }
+
+        &__nav ul li a{
+            padding: 1.3em;
+        }
+
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0 2em;
+
+        &__copy {
+
+            p{
+                width: 95%;
+            }
+
+        }
+    }
+
+    .form-desktop-hero{
+        display: flex;
+        justify-content: flex-start;
+        font-size: .8em;
+
+        input{
+            width: 50%;
+            margin-bottom: unset;
+            padding: .6em;
+        }
+
+        button{
+            width: 38%;
+            padding: .6em;
+            margin-left: 1em;
+        }
+    }
+
+    .productive{
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__text-container{
+            display: flex;
+            flex-direction: column;
+            padding: 0 2em;
+        }
+
+        &__testimonial{
+            margin: unset;
+            margin-left: 1.3em;
+        }
+    }
+
+    .access{
+        padding: 0 3em;
+        display: flex;
+
+        &__txt{
+            padding: 4em 0;
+
+            p{
+                width: 60%
+            }
+        }
+
+        .form-desktop-access{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+
+            input{
+                width: 90%;
+            }
+
+            button{
+                width: 50%;
+            }
+
+        }
+    }
+
+    .footer{
+        padding: 5em 3em 1em;
+        font-size: 1em;
+    
+        &__links{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+
+        &__contact img{
+            width: 13%;
+        }
+
+        &__social{
+            margin-top: 2.2em;
+            display: inline-flex;
+            
+
+            img{
+                padding: 0 .2em;
+                width: 110%;
+            }
+        }
+
+    }
+
+} 
